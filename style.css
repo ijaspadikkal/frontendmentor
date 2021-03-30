@@ -1,0 +1,146 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(210, 46%, 95%);
+  font-size: 12px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+:root {
+  --violet: rgb(117, 65, 200);
+  --darkblue: hsl(217, 19%, 35%);
+  --white: #ffffff;
+  --blackish-blue: hsl(219, 29%, 14%);
+  --black: black;
+}
+img {
+  height: 3rem;
+  border-radius: 50%;
+  border: 3.5px solid rgba(255, 255, 255, 0.5);
+}
+p {
+  line-height: 18px;
+  padding-top: 1rem;
+  color: var(--white);
+  opacity: 70%;
+}
+h1,
+h3,
+h5 {
+  color: var(--white);
+}
+h5 {
+  opacity: 50%;
+}
+.main {
+  padding: 2rem;   
+}
+.profile{
+  padding: 1rem;
+  border-radius: 0.6rem;
+  padding: 2rem 2rem 2rem 2rem;
+  margin-top: 2rem;
+}
+@media (min-width: 680px) {
+  .main { 
+    width:85%;
+    margin: 5rem auto; 
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: "profile-1 profile-1 profile-2 profile-5"
+                          "profile-3 profile-4 profile-4 profile-5";
+    grid-gap:2rem;
+  }
+  .profile-1 {
+    background-color: var(--violet);  
+    grid-area: profile-1;
+    
+  }
+  .profile-2 {
+    background-color: var(--darkblue); 
+    grid-area: profile-2; 
+  }
+  .profile-3 {
+    background-color: var(--white);  
+    grid-area: profile-3;
+  }
+  .profile-4 {
+    background-color: var(--blackish-blue);
+    grid-area: profile-4;  
+  }
+  .profile-5 {
+    background-color: var(--white);  
+    grid-area: profile-5;
+  }
+  .profile {
+    padding: 1rem;
+    border-radius: 0.6rem;
+    padding: 2rem 2rem 2rem 2rem;
+    margin-top: 0px;
+  }
+}
+.profile-1 {
+  background-color: var(--violet);
+  background-image: url('./images/bg-pattern-quotation.svg');
+  background-repeat: no-repeat;
+  background-position: top right 20%;  
+}
+.profile-2 {
+  background-color: var(--darkblue);  
+}
+.profile-3 {
+  background-color: var(--white);  
+}
+.profile-4 {
+  background-color: var(--blackish-blue);  
+}
+.profile-5 {
+  background-color: var(--white);  
+}
+.profile-3 h1 {
+  color: var(--black);
+}
+.profile-3 h3 {
+  color: var(--black);
+}
+.profile-3 h5 {
+  color: var(--black);
+}
+.profile-3 p {
+  color: var(--black);
+}
+.profile-5 h1 {
+  color: var(--black);
+}
+.profile-5 h3 {
+  color: var(--black);
+}
+.profile-5 h5 {
+  color: var(--black);
+}
+.profile-5 p {
+  color: var(--black);
+}
+.profile .profile-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  padding-bottom: 1rem;
+}
+.profile .profile-top .profile-name {
+  display: block;
+  padding-left: 1rem;
+}
