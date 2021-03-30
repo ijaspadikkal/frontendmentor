@@ -95,7 +95,7 @@ h5 {
   background-color: var(--violet);
   background-image: url('./images/bg-pattern-quotation.svg');
   background-repeat: no-repeat;
-  background-position: top right 20%;  
+  background-position: top right 20%;
 }
 .profile-2 {
   background-color: var(--darkblue);  
@@ -144,3 +144,4 @@ h5 {
   display: block;
   padding-left: 1rem;
 }
+/* finished */
